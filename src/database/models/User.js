@@ -11,7 +11,8 @@ module.exports = (connection) => {
             email: {
                 type: DataTypes.STRING
             }
-        },
-        {});
-        return User
+        }, {
+        underscored: true
+    });
+    return User
 }

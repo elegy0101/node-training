@@ -3,7 +3,7 @@ const { getConnection } = require('../../../src/database')
 const { connection } = getConnection()
 
 async function clearDatabase () {
-    await connection.query(`TRUNCATE Users`)
+    await connection.query(`TRUNCATE users`)
 }
 
 module.exports = {
