@@ -23,5 +23,7 @@
     "test:unit:watch": "jest src/ --watchAll",
     "test:functional": "jest -i --forceExit tests/functional",
     "test:funcional:watch": "jest -i --forceExit tests/functional --watchAll"
+    "test": "jest -i --forceExit tests",
+    "test:watch": "npm test --watchAll"
   }
 }
