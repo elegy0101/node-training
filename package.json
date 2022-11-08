@@ -19,7 +19,9 @@
     "wait-for-mysql": "wait-for-mysql --username=admin --password=admin -D 'training'",
     "migrate": "npx sequelize-cli db:migrate",
     "migrate:generate": "npx sequelize-cli migration:generate --name",
-    "test": "jest -i --forceExit tests",
-    "test:watch": "npm test --watchAll"
+    "test:unit": "jest src/",
+    "test:unit:watch": "jest src/ --watchAll",
+    "test:functional": "jest -i --forceExit tests/functional",
+    "test:funcional:watch": "jest -i --forceExit tests/functional --watchAll"
   }
 }
